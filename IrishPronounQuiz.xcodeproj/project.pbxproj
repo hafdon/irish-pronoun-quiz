@@ -7,18 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C0584992CAB0B6F00E5358E /* faoi_fúm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584982CAB0B6F00E5358E /* faoi_fúm.mp3 */; };
+		9C05849D2CAB0E7300E5358E /* faoi_fúithi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C05849B2CAB0E7300E5358E /* faoi_fúithi.mp3 */; };
+		9C05849E2CAB0E7300E5358E /* faoi_fút.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C05849C2CAB0E7300E5358E /* faoi_fút.mp3 */; };
+		9C05849F2CAB0E7300E5358E /* faoi_faoi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C05849A2CAB0E7300E5358E /* faoi_faoi.mp3 */; };
+		9C0584A12CAB130D00E5358E /* faoi_fúthu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584A02CAB130D00E5358E /* faoi_fúthu.mp3 */; };
 		9C8956652CAAE29E0051EB8B /* IrishPronounQuizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8956642CAAE29E0051EB8B /* IrishPronounQuizApp.swift */; };
 		9C8956672CAAE29E0051EB8B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8956662CAAE29E0051EB8B /* ContentView.swift */; };
 		9C8956692CAAE2A00051EB8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C8956682CAAE2A00051EB8B /* Assets.xcassets */; };
 		9C89566C2CAAE2A00051EB8B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C89566B2CAAE2A00051EB8B /* Preview Assets.xcassets */; };
+		9C8956732CAAE2DC0051EB8B /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8956722CAAE2DC0051EB8B /* Models.swift */; };
+		9C8956752CAAE3200051EB8B /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8956742CAAE3200051EB8B /* AudioPlayer.swift */; };
+		9C8956772CAAE3410051EB8B /* RecognitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8956762CAAE3410051EB8B /* RecognitionView.swift */; };
+		9C8956792CAAE3770051EB8B /* ProductionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8956782CAAE3770051EB8B /* ProductionView.swift */; };
+		9C89567B2CAAE66D0051EB8B /* ModeDestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C89567A2CAAE66D0051EB8B /* ModeDestinationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9C0584952CAB06E300E5358E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = IrishPronounQuiz/Info.plist; sourceTree = SOURCE_ROOT; };
+		9C0584982CAB0B6F00E5358E /* faoi_fúm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "faoi_fúm.mp3"; sourceTree = "<group>"; };
+		9C05849A2CAB0E7300E5358E /* faoi_faoi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = faoi_faoi.mp3; sourceTree = "<group>"; };
+		9C05849B2CAB0E7300E5358E /* faoi_fúithi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "faoi_fúithi.mp3"; sourceTree = "<group>"; };
+		9C05849C2CAB0E7300E5358E /* faoi_fút.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "faoi_fút.mp3"; sourceTree = "<group>"; };
+		9C0584A02CAB130D00E5358E /* faoi_fúthu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "faoi_fúthu.mp3"; sourceTree = "<group>"; };
 		9C8956612CAAE29E0051EB8B /* IrishPronounQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IrishPronounQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C8956642CAAE29E0051EB8B /* IrishPronounQuizApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrishPronounQuizApp.swift; sourceTree = "<group>"; };
 		9C8956662CAAE29E0051EB8B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9C8956682CAAE2A00051EB8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C89566B2CAAE2A00051EB8B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9C8956722CAAE2DC0051EB8B /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		9C8956742CAAE3200051EB8B /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		9C8956762CAAE3410051EB8B /* RecognitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecognitionView.swift; sourceTree = "<group>"; };
+		9C8956782CAAE3770051EB8B /* ProductionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductionView.swift; sourceTree = "<group>"; };
+		9C89567A2CAAE66D0051EB8B /* ModeDestinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeDestinationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +53,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C0584972CAB0B0500E5358E /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				9C0584982CAB0B6F00E5358E /* faoi_fúm.mp3 */,
+				9C05849A2CAB0E7300E5358E /* faoi_faoi.mp3 */,
+				9C05849B2CAB0E7300E5358E /* faoi_fúithi.mp3 */,
+				9C05849C2CAB0E7300E5358E /* faoi_fút.mp3 */,
+				9C0584A02CAB130D00E5358E /* faoi_fúthu.mp3 */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
 		9C8956582CAAE29E0051EB8B = {
 			isa = PBXGroup;
 			children = (
@@ -54,7 +87,14 @@
 				9C8956642CAAE29E0051EB8B /* IrishPronounQuizApp.swift */,
 				9C8956662CAAE29E0051EB8B /* ContentView.swift */,
 				9C8956682CAAE2A00051EB8B /* Assets.xcassets */,
+				9C0584972CAB0B0500E5358E /* Audio */,
 				9C89566A2CAAE2A00051EB8B /* Preview Content */,
+				9C8956722CAAE2DC0051EB8B /* Models.swift */,
+				9C8956742CAAE3200051EB8B /* AudioPlayer.swift */,
+				9C8956762CAAE3410051EB8B /* RecognitionView.swift */,
+				9C8956782CAAE3770051EB8B /* ProductionView.swift */,
+				9C89567A2CAAE66D0051EB8B /* ModeDestinationView.swift */,
+				9C0584952CAB06E300E5358E /* Info.plist */,
 			);
 			path = IrishPronounQuiz;
 			sourceTree = "<group>";
@@ -125,8 +165,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C0584992CAB0B6F00E5358E /* faoi_fúm.mp3 in Resources */,
 				9C89566C2CAAE2A00051EB8B /* Preview Assets.xcassets in Resources */,
 				9C8956692CAAE2A00051EB8B /* Assets.xcassets in Resources */,
+				9C0584A12CAB130D00E5358E /* faoi_fúthu.mp3 in Resources */,
+				9C05849D2CAB0E7300E5358E /* faoi_fúithi.mp3 in Resources */,
+				9C05849E2CAB0E7300E5358E /* faoi_fút.mp3 in Resources */,
+				9C05849F2CAB0E7300E5358E /* faoi_faoi.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C8956732CAAE2DC0051EB8B /* Models.swift in Sources */,
+				9C89567B2CAAE66D0051EB8B /* ModeDestinationView.swift in Sources */,
 				9C8956672CAAE29E0051EB8B /* ContentView.swift in Sources */,
 				9C8956652CAAE29E0051EB8B /* IrishPronounQuizApp.swift in Sources */,
+				9C8956772CAAE3410051EB8B /* RecognitionView.swift in Sources */,
+				9C8956792CAAE3770051EB8B /* ProductionView.swift in Sources */,
+				9C8956752CAAE3200051EB8B /* AudioPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
