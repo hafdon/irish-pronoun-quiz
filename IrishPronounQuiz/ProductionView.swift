@@ -54,7 +54,7 @@ struct ProductionView: View {
                         .padding(.bottom, 2)
                         
                         Button(action: {
-                            audioPlayer.playAudio(named: question.audioFileName)
+                            audioPlayer.playAudio(named: question.audioFileName.rawValue)
                         }) {
                             Text("Play Correct Audio")
                                 .padding()
@@ -73,7 +73,7 @@ struct ProductionView: View {
                         .padding(.bottom, 2)
                         
                         Button(action: {
-                            audioPlayer.playAudio(named: question.audioFileName)
+                            audioPlayer.playAudio(named: question.audioFileName.rawValue)
                         }) {
                             Text("Play Correct Audio")
                                 .padding()
