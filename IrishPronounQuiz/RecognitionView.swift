@@ -12,6 +12,7 @@ struct RecognitionView: View {
     @StateObject var audioPlayer = AudioPlayer()
     @State private var showErrorAlert: Bool = false
     @State private var showSpelling: Bool = true // 1a. New State Variable
+    @State private var shuffledMeanings: [String] = []
     @Namespace private var animationNamespace // For 1b. Visual Transition
 
     let pronounForms: [PronounForm]
@@ -33,9 +34,6 @@ struct RecognitionView: View {
             if let question = currentQuestion {
                 // 1b. Visual Transition using matched geometry
                 VStack {
-//                    Text("Meaning: \(question.meaning)")
-//                        .font(.headline)
-//                        .padding()
 
                     if showSpelling {
                         Text("Spelling: \(question.form)")
@@ -48,8 +46,8 @@ struct RecognitionView: View {
                     // We'll trigger this in loadNextQuestion()
 
                     // 1c. Make selection submit the answer
-                    List {
-                        ForEach(pronounForms.map { $0.meaning }, id: \.self) { meaning in
+                    List {  
+                        ForEach(shuffledMeanings, id: \.self) { meaning in
                             HStack {
                                 Text(meaning)
                                 Spacer()
@@ -103,14 +101,14 @@ struct RecognitionView: View {
                     Button(action: {
                         audioPlayer.playAudio(named: question.audioFileName.rawValue)
                     }) {
-                        Text("Play Correct Audio")
+                        Text("Play Audio")
                             .padding()
                             .background(Color.blue)
                             .foregroundColor(.white)
                             .cornerRadius(8)
                     }
                     .padding(.bottom, 10)
-                    .accessibilityLabel("Play the correct pronunciation audio")
+                    .accessibilityLabel("Play the pronunciation audio")
 
                     Spacer()
                 }
@@ -160,6 +158,9 @@ struct RecognitionView: View {
             currentQuestion = pronounForms.randomElement()
             selectedMeaning = ""
             showAnswer = false
+            
+            // Shuffle the meanings and assign to shuffledMeanings
+            shuffledMeanings = pronounForms.map { $0.meaning }.shuffled()
 
             // 1d. Play audio automatically
             if let question = currentQuestion {

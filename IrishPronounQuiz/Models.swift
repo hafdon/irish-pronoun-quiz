@@ -258,7 +258,8 @@ struct DataProvider {
                 PronounForm(
                     meaning: "out of them",
                     form: "astu",
-                    audioFileName: .asAstu // Corresponds to as_astu.mp3
+                    audioFileName: .asAstu // Corresponds to as_astu.mp3,
+                    
                 )
             ]}
         else if dialect == .connacht && preposition == .de {

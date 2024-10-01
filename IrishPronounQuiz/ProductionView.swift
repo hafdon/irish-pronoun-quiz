@@ -10,6 +10,7 @@ struct ProductionView: View {
     @State private var showAnswer: Bool = false
     @StateObject var audioPlayer = AudioPlayer()
     @State private var showErrorAlert: Bool = false
+    @State private var showMeaning: Bool = true // 1a. New State Variable
     
     let pronounForms: [PronounForm]
     
@@ -21,13 +22,26 @@ struct ProductionView: View {
     
     var body: some View {
         VStack {
+            
+            // 1a. Toggle for showing/hiding spelling
+            Toggle(isOn: $showMeaning) {
+                Text("Show Meaning")
+            }
+            .padding()
+            
             if let question = currentQuestion {
-                Text("Meaning: \(question.meaning)")
-                    .font(.headline)
-                    .padding()
+                
+                if showMeaning {
+                    Text("Meaning: \(question.meaning)")
+                        .font(.headline)
+                        .padding()
+                        .transition(.opacity)
+                }
                 
                 TextField("Enter Irish form", text: $userAnswer)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .autocapitalization(.none) // Prevents automatic capitalization
+                    .disableAutocorrection(true) // Disables autocorrection and predictive text
                     .padding()
                 
                 Button(action: {
@@ -43,6 +57,17 @@ struct ProductionView: View {
                 .disabled(userAnswer.isEmpty)
                 .padding()
                 
+                Button(action: {
+                    audioPlayer.playAudio(named: question.audioFileName.rawValue)
+                }) {
+                    Text("Play Correct Audio")
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(8)
+                }
+                .padding(.bottom, 10)
+                
                 if showAnswer {
                     if userAnswer.lowercased() == question.form.lowercased() {
                         HStack {
@@ -53,16 +78,7 @@ struct ProductionView: View {
                         }
                         .padding(.bottom, 2)
                         
-                        Button(action: {
-                            audioPlayer.playAudio(named: question.audioFileName.rawValue)
-                        }) {
-                            Text("Play Correct Audio")
-                                .padding()
-                                .background(Color.blue)
-                                .foregroundColor(.white)
-                                .cornerRadius(8)
-                        }
-                        .padding(.bottom, 10)
+
                     } else {
                         HStack {
                             Image(systemName: "xmark.circle")
@@ -72,16 +88,6 @@ struct ProductionView: View {
                         }
                         .padding(.bottom, 2)
                         
-                        Button(action: {
-                            audioPlayer.playAudio(named: question.audioFileName.rawValue)
-                        }) {
-                            Text("Play Correct Audio")
-                                .padding()
-                                .background(Color.blue)
-                                .foregroundColor(.white)
-                                .cornerRadius(8)
-                        }
-                        .padding(.bottom, 10)
                     }
                     
                     Button("Next") {
@@ -131,6 +137,7 @@ struct ProductionView: View {
     
     func submitAnswer() {
         showAnswer = true
+        showMeaning = true
         // You can add additional logic here if needed
     }
 }
