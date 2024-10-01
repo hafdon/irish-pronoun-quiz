@@ -96,7 +96,7 @@ enum AudioFile: String {
 }
 
 // Pronoun Form Struct
-struct PronounForm: Identifiable {
+struct PronounForm: Identifiable, Hashable {
     let id = UUID()
     let meaning: String
     let form: String

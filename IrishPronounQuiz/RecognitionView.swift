@@ -12,7 +12,7 @@ struct RecognitionView: View {
     @StateObject var audioPlayer = AudioPlayer()
     @State private var showErrorAlert: Bool = false
     @State private var showSpelling: Bool = true // 1a. New State Variable
-    @State private var shuffledMeanings: [String] = []
+    @State private var shuffledPronounForms: [PronounForm] = [] // Updated State Variable
     @Namespace private var animationNamespace // For 1b. Visual Transition
 
     let pronounForms: [PronounForm]
@@ -35,33 +35,52 @@ struct RecognitionView: View {
                 // 1b. Visual Transition using matched geometry
                 VStack {
 
+                    // 1c. Make selection submit the answer
+                    List {
+                        ForEach(shuffledPronounForms, id: \.id) { form in // Ensure PronounForm conforms to Identifiable
+                            HStack {
+                                Text(form.meaning)
+                                
+                                Spacer()
+                                
+                                if form.meaning == selectedMeaning {
+                                    Image(systemName: "checkmark")
+                                        .foregroundColor(.blue)
+                                }
+                                
+                                if showAnswer {
+                                    
+                                    if (showSpelling){
+                                        Text("(" + form.form + ")")
+                                    }
+                                    
+                                    Button(action: {
+                                        audioPlayer.playAudio(named: form.audioFileName.rawValue)
+                                    }) {
+                                        Image(systemName: "speaker.wave.2.fill")
+                                            .foregroundColor(.blue)
+                                    }
+                                    .buttonStyle(BorderlessButtonStyle()) // Ensures the button doesn't interfere with row selection
+                                }
+                                
+                                
+                            }
+                            .contentShape(Rectangle())
+                            .onTapGesture {
+                                if !showAnswer { // Allow selection only if answer hasn't been shown yet
+                                    submitAnswer(selected: form.meaning, for: question)
+                                }
+                            }
+                            .animation(.easeInOut, value: selectedMeaning)
+                        }
+                    }
+                    .listStyle(PlainListStyle()) // Optional: Customize list appearance
+                    
                     if showSpelling {
                         Text("Spelling: \(question.form)")
                             .font(.subheadline)
                             .padding(.bottom, 5)
                             .transition(.opacity) // Fade in/out
-                    }
-
-                    // 1d. Play audio automatically when question loads
-                    // We'll trigger this in loadNextQuestion()
-
-                    // 1c. Make selection submit the answer
-                    List {  
-                        ForEach(shuffledMeanings, id: \.self) { meaning in
-                            HStack {
-                                Text(meaning)
-                                Spacer()
-                                if meaning == selectedMeaning {
-                                    Image(systemName: "checkmark")
-                                        .foregroundColor(.blue)
-                                }
-                            }
-                            .contentShape(Rectangle())
-                            .onTapGesture {
-                                submitAnswer(selected: meaning, for: question)
-                            }
-                            .animation(.easeInOut, value: selectedMeaning)
-                        }
                     }
 
                     if showAnswer {
@@ -78,7 +97,7 @@ struct RecognitionView: View {
                             HStack {
                                 Image(systemName: "xmark.circle")
                                     .foregroundColor(.red)
-                                Text("Incorrect! Correct form: \(question.meaning)")
+                                Text("Incorrect! Correct meaning: \(question.meaning)")
                                     .foregroundColor(.red)
                             }
                             .padding(.bottom, 2)
@@ -146,7 +165,7 @@ struct RecognitionView: View {
         selectedMeaning = selected
         showAnswer = true
 
-        if selected.lowercased() == question.form.lowercased() {
+        if selected.lowercased() == question.meaning.lowercased() {
             // Correct answer logic (if any)
         } else {
             // Incorrect answer logic (if any)
@@ -159,11 +178,19 @@ struct RecognitionView: View {
             selectedMeaning = ""
             showAnswer = false
             
-            // Shuffle the meanings and assign to shuffledMeanings
-            shuffledMeanings = pronounForms.map { $0.meaning }.shuffled()
-
-            // 1d. Play audio automatically
+            // Shuffle the PronounForms directly
             if let question = currentQuestion {
+                shuffledPronounForms = pronounForms.shuffled()
+                
+                // Ensure the current question is included in shuffledPronounForms
+                if !shuffledPronounForms.contains(where: { $0.id == question.id }) {
+                    shuffledPronounForms.append(question)
+                }
+                
+                // Optionally, shuffle again to mix the current question into the list
+                shuffledPronounForms.shuffle()
+                
+                // 1d. Play audio automatically
                 audioPlayer.playAudio(named: question.audioFileName.rawValue)
             }
         }
