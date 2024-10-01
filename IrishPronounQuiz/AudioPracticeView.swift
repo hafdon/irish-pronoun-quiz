@@ -15,15 +15,21 @@ struct AudioPracticeView: View {
     // Fetch all pronoun forms regardless of preposition
     let pronounForms: [PronounForm]
     
+    // Timer for briefly showing answers before transitioning
+    @State private var showAnswersTemporarily: Bool = false
+    
     init(dialect: Dialect) {
+        // Connacht | Munster | Ulster
         self.dialect = dialect
-        self.pronounForms = DataProvider.getAllPronounForms(dialect: dialect) // Modify as per your data provider
+        // Get all pronoun forms irrespective of pronoun
+        self.pronounForms = DataProvider.getAllPronounForms(dialect: dialect)
     }
     
     var body: some View {
         VStack(spacing: 30) {
             if let form = currentPronounForm {
                 VStack(spacing: 20) {
+                    
                     // Play Audio Button
                     Button(action: {
                         audioPlayer.playAudio(named: form.audioFileName.rawValue)
@@ -36,7 +42,7 @@ struct AudioPracticeView: View {
                     }
                     .accessibilityLabel("Play audio for \(form.meaning)")
                     
-                    // Reveal Form and Meaning Buttons
+                    // "Reveal Form" and "Reveal Meaning" Buttons
                     HStack(spacing: 20) {
                         Button(action: {
                             withAnimation {
@@ -69,10 +75,11 @@ struct AudioPracticeView: View {
                         .accessibilityLabel("Reveal meaning")
                     }
                     
+                    
                     // Display Revealed Information
                     VStack(alignment: .leading, spacing: 10) {
                         if showForm {
-                            Text("Form: \(form.form) (\(form.preposition))")
+                            Text("Form: \(formattedForm(form))")
                                 .font(.headline)
                                 .transition(.opacity)
                         }
@@ -88,7 +95,7 @@ struct AudioPracticeView: View {
                     .cornerRadius(10)
                     
                     // Next Button
-                    Button(action: loadRandomForm) {
+                    Button(action: nextButtonTapped) {
                         Text("Next")
                             .padding()
                             .frame(maxWidth: .infinity)
@@ -127,17 +134,49 @@ struct AudioPracticeView: View {
         }
     }
     
-    // Function to load a random pronoun form
+    // MARK: - Helper Functions
+    
+    /// Formats the form by removing any trailing underscores from the preposition
+    func formattedForm(_ form: PronounForm) -> String {
+        let cleanedPreposition = form.preposition.rawValue
+        return "\(form.form) (\(cleanedPreposition))"
+    }
+    
+    /// Handles the "Next" button tap
+    func nextButtonTapped() {
+        // Reveal current form and meaning
+        withAnimation(.easeInOut(duration: 0.5)) {
+            showForm = true
+            showMeaning = true
+        }
+        
+        // Delay loading the next form to allow the user to see the revealed answers
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { // Adjust the delay as needed
+            loadRandomForm()
+        }
+    }
+    
+    /// Loads a new random pronoun form and plays its audio automatically
     func loadRandomForm() {
         guard !pronounForms.isEmpty else {
             currentPronounForm = nil
             return
         }
         
-        currentPronounForm = pronounForms.randomElement()
+        // Select a new random form ensuring it's different from the current one
+        var newForm: PronounForm?
+        repeat {
+            newForm = pronounForms.randomElement()
+        } while pronounForms.count > 1 && newForm?.id == currentPronounForm?.id
+        
+        currentPronounForm = newForm
         showForm = false
         showMeaning = false
-        audioPlayer.stop() // Stop any ongoing audio if necessary
+        
+        // Play the audio for the new form
+        if let audioName = newForm?.audioFileName.rawValue {
+            audioPlayer.playAudio(named: audioName)
+        }
     }
 }
 
