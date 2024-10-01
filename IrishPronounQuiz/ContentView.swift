@@ -9,6 +9,7 @@ struct ContentView: View {
     enum Mode: String, CaseIterable, Identifiable {
         case recognition = "Recognition"
         case production = "Production"
+        case audioPractice = "Blitz"
         
         var id: String { self.rawValue }
     }
@@ -16,7 +17,10 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             Form {
+                
+                // First picker: tripartite button thing
                 Section(header: Text("Select Dialect")) {
+                    // Conacht | Munster | Ulster
                     Picker("Dialect", selection: $selectedDialect) {
                         ForEach(Dialect.allCases) { dialect in
                             Text(dialect.rawValue).tag(dialect)
@@ -25,6 +29,7 @@ struct ContentView: View {
                     .pickerStyle(SegmentedPickerStyle())
                 }
                 
+                // Second picker: Dropdown
                 Section(header: Text("Select Prepositional Pronoun")) {
                     Picker("Pronoun", selection: $selectedPronoun) {
                         ForEach(PrepositionalPronoun.allCases) { pronoun in
@@ -34,6 +39,7 @@ struct ContentView: View {
                     .pickerStyle(MenuPickerStyle())
                 }
                 
+                // Third picker: Mode selection : partitioned button thing
                 Section(header: Text("Select Mode")) {
                     Picker("Mode", selection: $selectedMode) {
                         ForEach(Mode.allCases) { mode in
@@ -43,6 +49,7 @@ struct ContentView: View {
                     .pickerStyle(SegmentedPickerStyle())
                 }
                 
+                // Start button
                 NavigationLink(
                     destination: ModeDestinationView(mode: selectedMode, dialect: selectedDialect, pronoun: selectedPronoun)
                 ) {

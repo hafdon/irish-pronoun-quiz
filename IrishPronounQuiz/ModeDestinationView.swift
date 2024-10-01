@@ -11,6 +11,8 @@ struct ModeDestinationView: View {
             RecognitionView(dialect: dialect, pronoun: pronoun)
         case .production:
             ProductionView(dialect: dialect, pronoun: pronoun)
+        case .audioPractice:
+            AudioPracticeView(dialect: dialect)
         }
     }
 }
