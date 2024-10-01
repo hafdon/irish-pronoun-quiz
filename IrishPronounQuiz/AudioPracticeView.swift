@@ -7,7 +7,10 @@ struct AudioPracticeView: View {
     
     @StateObject private var audioPlayer = AudioPlayer()
     @State private var showErrorAlert: Bool = false
-    @State private var revealAnswers: [UUID: Bool] = [:] // Track which answers are revealed
+    
+    @State private var currentPronounForm: PronounForm?
+    @State private var showForm: Bool = false
+    @State private var showMeaning: Bool = false
     
     // Fetch all pronoun forms regardless of preposition
     let pronounForms: [PronounForm]
@@ -18,54 +21,104 @@ struct AudioPracticeView: View {
     }
     
     var body: some View {
-        VStack {
-            List(pronounForms) { form in
-                VStack(alignment: .leading, spacing: 10) {
-                    HStack {
-                        Text(form.meaning)
-                            .font(.headline)
-                        
-                        Spacer()
+        VStack(spacing: 30) {
+            if let form = currentPronounForm {
+                VStack(spacing: 20) {
+                    // Play Audio Button
+                    Button(action: {
+                        audioPlayer.playAudio(named: form.audioFileName.rawValue)
+                    }) {
+                        Image(systemName: "speaker.wave.2.fill")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 60, height: 60)
+                            .foregroundColor(.blue)
+                    }
+                    .accessibilityLabel("Play audio for \(form.meaning)")
+                    
+                    // Reveal Form and Meaning Buttons
+                    HStack(spacing: 20) {
+                        Button(action: {
+                            withAnimation {
+                                showForm = true
+                            }
+                        }) {
+                            Text("Reveal Form")
+                                .padding()
+                                .frame(maxWidth: .infinity)
+                                .background(Color.green)
+                                .foregroundColor(.white)
+                                .cornerRadius(8)
+                        }
+                        .disabled(showForm)
+                        .accessibilityLabel("Reveal form")
                         
                         Button(action: {
-                            audioPlayer.playAudio(named: form.audioFileName.rawValue)
+                            withAnimation {
+                                showMeaning = true
+                            }
                         }) {
-                            Image(systemName: "speaker.wave.2.fill")
-                                .foregroundColor(.blue)
+                            Text("Reveal Meaning")
+                                .padding()
+                                .frame(maxWidth: .infinity)
+                                .background(Color.orange)
+                                .foregroundColor(.white)
+                                .cornerRadius(8)
                         }
-                        .buttonStyle(BorderlessButtonStyle()) // Prevents row selection interference
-                        .accessibilityLabel("Play audio for \(form.meaning)")
+                        .disabled(showMeaning)
+                        .accessibilityLabel("Reveal meaning")
                     }
                     
-                    if revealAnswers[form.id] == true {
-                        VStack(alignment: .leading, spacing: 5) {
-                            Text("Form: \(form.form)")
-                                .font(.subheadline)
+                    // Display Revealed Information
+                    VStack(alignment: .leading, spacing: 10) {
+                        if showForm {
+                            Text("Form: \(form.form) (\(form.preposition))")
+                                .font(.headline)
+                                .transition(.opacity)
+                        }
+                        
+                        if showMeaning {
                             Text("Meaning: \(form.meaning)")
                                 .font(.subheadline)
+                                .transition(.opacity)
                         }
-                        .transition(.opacity)
                     }
+                    .padding()
+                    .background(Color(UIColor.secondarySystemBackground))
+                    .cornerRadius(10)
+                    
+                    // Next Button
+                    Button(action: loadRandomForm) {
+                        Text("Next")
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(Color.purple)
+                            .foregroundColor(.white)
+                            .cornerRadius(8)
+                    }
+                    .accessibilityLabel("Load another random form")
                 }
-                .padding(.vertical, 5)
-                .animation(.easeInOut, value: revealAnswers[form.id])
+                .padding()
+                .background(Color(UIColor.systemBackground))
+                .cornerRadius(15)
+                .shadow(radius: 5)
+                .transition(.slide)
+            } else {
+                Text("No pronoun forms available.")
+                    .foregroundColor(.gray)
             }
             
-            Button(action: revealAllAnswers) {
-                Text("Reveal All Answers")
-                    .padding()
-                    .background(Color.orange)
-                    .foregroundColor(.white)
-                    .cornerRadius(8)
-            }
-            .padding()
-            .accessibilityLabel("Reveal all answers")
+            Spacer()
         }
+        .padding()
         .navigationTitle("Audio Practice")
         .alert(isPresented: $showErrorAlert) {
             Alert(title: Text("Audio Playback Error"),
                   message: Text(audioPlayer.errorMessage ?? "Unknown error."),
                   dismissButton: .default(Text("OK")))
+        }
+        .onAppear {
+            loadRandomForm()
         }
         .onReceive(audioPlayer.$errorMessage) { errorMessage in
             if errorMessage != nil {
@@ -74,11 +127,17 @@ struct AudioPracticeView: View {
         }
     }
     
-    // Function to reveal all answers
-    func revealAllAnswers() {
-        for form in pronounForms {
-            revealAnswers[form.id] = true
+    // Function to load a random pronoun form
+    func loadRandomForm() {
+        guard !pronounForms.isEmpty else {
+            currentPronounForm = nil
+            return
         }
+        
+        currentPronounForm = pronounForms.randomElement()
+        showForm = false
+        showMeaning = false
+        audioPlayer.stop() // Stop any ongoing audio if necessary
     }
 }
 
