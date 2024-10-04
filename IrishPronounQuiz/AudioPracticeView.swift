@@ -32,7 +32,7 @@ struct AudioPracticeView: View {
                     
                     // Play Audio Button
                     Button(action: {
-                        audioPlayer.playAudio(named: form.audioFileName.rawValue)
+                        audioPlayer.playAudio(subdirectory: form.audioSubdirectory, resourceName: form.audioResourceName)
                     }) {
                         Image(systemName: "speaker.wave.2.fill")
                             .resizable()
@@ -174,8 +174,8 @@ struct AudioPracticeView: View {
         showMeaning = false
         
         // Play the audio for the new form
-        if let audioName = newForm?.audioFileName.rawValue {
-            audioPlayer.playAudio(named: audioName)
+        if let form = newForm {
+            audioPlayer.playAudio(subdirectory: form.audioSubdirectory, resourceName: form.audioResourceName)
         }
     }
 }

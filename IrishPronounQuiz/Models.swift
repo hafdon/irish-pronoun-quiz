@@ -95,12 +95,3 @@ enum AudioFile: String {
     // Add more cases as needed
 }
 
-// Pronoun Form Struct
-struct PronounForm: Identifiable, Hashable {
-    let id = UUID()
-    let dialect: Dialect
-    let preposition: PrepositionalPronoun
-    let meaning: String
-    let form: String
-    let audioFileName: AudioFile
-}

@@ -15,10 +15,19 @@ class AudioPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
         setupInterruptionHandling()
     }
 
-    func playAudio(named name: String, withExtension ext: String = "mp3") {
-        guard let url = Bundle.main.url(forResource: name, withExtension: ext) else {
+    /// Plays audio from a specified subdirectory and resource name.
+    /// - Parameters:
+    ///   - subdirectory: The subdirectory within the main bundle (e.g., "Ulster").
+    ///   - resourceName: The name of the audio file without extension (e.g., "faoi_fúm").
+    ///   - ext: The file extension (default is "mp3").
+    func playAudio(subdirectory: String, resourceName: String, withExtension ext: String = "mp3") {
+        // Construct the full subdirectory path
+        let fullSubdirectory = "Audio/\(subdirectory)"
+        
+        // Attempt to locate the audio file within the specified subdirectory
+        guard let url = Bundle.main.url(forResource: resourceName, withExtension: ext, subdirectory: fullSubdirectory) else {
             DispatchQueue.main.async {
-                self.errorMessage = "Audio file \(name).\(ext) not found."
+                self.errorMessage = "Audio file \(fullSubdirectory)/\(resourceName).\(ext) not found."
             }
             return
         }

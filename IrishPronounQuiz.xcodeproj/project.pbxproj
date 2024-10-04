@@ -7,72 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9C0584992CAB0B6F00E5358E /* faoi_fúm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584982CAB0B6F00E5358E /* faoi_fúm.mp3 */; };
-		9C05849D2CAB0E7300E5358E /* faoi_fúithi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C05849B2CAB0E7300E5358E /* faoi_fúithi.mp3 */; };
-		9C05849E2CAB0E7300E5358E /* faoi_fút.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C05849C2CAB0E7300E5358E /* faoi_fút.mp3 */; };
-		9C05849F2CAB0E7300E5358E /* faoi_faoi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C05849A2CAB0E7300E5358E /* faoi_faoi.mp3 */; };
-		9C0584A12CAB130D00E5358E /* faoi_fúthu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584A02CAB130D00E5358E /* faoi_fúthu.mp3 */; };
-		9C0584A32CAB14A800E5358E /* faoi_fúinn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584A22CAB14A800E5358E /* faoi_fúinn.mp3 */; };
-		9C0584A52CAB14B100E5358E /* faoi_fúibh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584A42CAB14B100E5358E /* faoi_fúibh.mp3 */; };
-		9C0584C92CAB1D4800E5358E /* de_díot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584C12CAB1D4800E5358E /* de_díot.mp3 */; };
-		9C0584CA2CAB1D4800E5358E /* ar_ort.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584B12CAB1D4800E5358E /* ar_ort.mp3 */; };
-		9C0584CB2CAB1D4800E5358E /* de_díom.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584C02CAB1D4800E5358E /* de_díom.mp3 */; };
-		9C0584CC2CAB1D4800E5358E /* do_daoibh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584C22CAB1D4800E5358E /* do_daoibh.mp3 */; };
-		9C0584CD2CAB1D4800E5358E /* as_aisti.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584B42CAB1D4800E5358E /* as_aisti.mp3 */; };
-		9C0584CE2CAB1D4800E5358E /* de_díobh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584BF2CAB1D4800E5358E /* de_díobh.mp3 */; };
-		9C0584CF2CAB1D4800E5358E /* as_asat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584B92CAB1D4800E5358E /* as_asat.mp3 */; };
-		9C0584D02CAB1D4800E5358E /* do_dó.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584C42CAB1D4800E5358E /* do_dó.mp3 */; };
-		9C0584D12CAB1D4800E5358E /* ag_againn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584A82CAB1D4800E5358E /* ag_againn.mp3 */; };
-		9C0584D22CAB1D4800E5358E /* as_astu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584BA2CAB1D4800E5358E /* as_astu.mp3 */; };
-		9C0584D32CAB1D4800E5358E /* de_de.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584BB2CAB1D4800E5358E /* de_de.mp3 */; };
-		9C0584D42CAB1D4800E5358E /* do_di.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584C32CAB1D4800E5358E /* do_di.mp3 */; };
-		9C0584D52CAB1D4800E5358E /* ag_agam.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584A92CAB1D4800E5358E /* ag_agam.mp3 */; };
-		9C0584D62CAB1D4800E5358E /* ar_orm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584B02CAB1D4800E5358E /* ar_orm.mp3 */; };
-		9C0584D72CAB1D4800E5358E /* ag_agaibh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584A72CAB1D4800E5358E /* ag_agaibh.mp3 */; };
-		9C0584D82CAB1D4800E5358E /* as_asaibh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584B62CAB1D4800E5358E /* as_asaibh.mp3 */; };
-		9C0584D92CAB1D4800E5358E /* de_díbh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584BD2CAB1D4800E5358E /* de_díbh.mp3 */; };
-		9C0584DA2CAB1D4800E5358E /* do_dom.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584C62CAB1D4800E5358E /* do_dom.mp3 */; };
-		9C0584DB2CAB1D4800E5358E /* ag_aige.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584AC2CAB1D4800E5358E /* ag_aige.mp3 */; };
-		9C0584DC2CAB1D4800E5358E /* as_asainn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584B72CAB1D4800E5358E /* as_asainn.mp3 */; };
-		9C0584DD2CAB1D4800E5358E /* ag_agat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584AA2CAB1D4800E5358E /* ag_agat.mp3 */; };
-		9C0584DE2CAB1D4800E5358E /* do_dúinn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584C72CAB1D4800E5358E /* do_dúinn.mp3 */; };
-		9C0584DF2CAB1D4800E5358E /* de_di.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584BC2CAB1D4800E5358E /* de_di.mp3 */; };
-		9C0584E02CAB1D4800E5358E /* as_as.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584B52CAB1D4800E5358E /* as_as.mp3 */; };
-		9C0584E12CAB1D4800E5358E /* ag_acu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584A62CAB1D4800E5358E /* ag_acu.mp3 */; };
-		9C0584E22CAB1D4800E5358E /* ar_orthu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584B22CAB1D4800E5358E /* ar_orthu.mp3 */; };
-		9C0584E32CAB1D4800E5358E /* ar_uirthi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584B32CAB1D4800E5358E /* ar_uirthi.mp3 */; };
-		9C0584E42CAB1D4800E5358E /* de_dínn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584BE2CAB1D4800E5358E /* de_dínn.mp3 */; };
-		9C0584E52CAB1D4800E5358E /* as_asam.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584B82CAB1D4800E5358E /* as_asam.mp3 */; };
-		9C0584E62CAB1D4800E5358E /* ag_aici.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584AB2CAB1D4800E5358E /* ag_aici.mp3 */; };
-		9C0584E72CAB1D4800E5358E /* ar_oraibh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584AE2CAB1D4800E5358E /* ar_oraibh.mp3 */; };
-		9C0584E82CAB1D4800E5358E /* ar_orainn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584AF2CAB1D4800E5358E /* ar_orainn.mp3 */; };
-		9C0584E92CAB1D4800E5358E /* ar_air.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584AD2CAB1D4800E5358E /* ar_air.mp3 */; };
-		9C0584EA2CAB1D4800E5358E /* do_dóibh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584C52CAB1D4800E5358E /* do_dóibh.mp3 */; };
-		9C0584EB2CAB1D4800E5358E /* do_duit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584C82CAB1D4800E5358E /* do_duit.mp3 */; };
-		9C0585042CAB1D5300E5358E /* le_leis.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584F82CAB1D5300E5358E /* le_leis.mp3 */; };
-		9C0585052CAB1D5300E5358E /* ó_uait.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0585012CAB1D5300E5358E /* ó_uait.mp3 */; };
-		9C0585062CAB1D5300E5358E /* ó_uaibh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584FD2CAB1D5300E5358E /* ó_uaibh.mp3 */; };
-		9C0585072CAB1D5300E5358E /* le_leat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584F62CAB1D5300E5358E /* le_leat.mp3 */; };
-		9C0585082CAB1D5300E5358E /* le_libh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584FA2CAB1D5300E5358E /* le_libh.mp3 */; };
-		9C0585092CAB1D5300E5358E /* idir_eadraibh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584F32CAB1D5300E5358E /* idir_eadraibh.mp3 */; };
-		9C05850A2CAB1D5300E5358E /* ó_uaim.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584FF2CAB1D5300E5358E /* ó_uaim.mp3 */; };
-		9C05850B2CAB1D5300E5358E /* ó_uaithi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0585022CAB1D5300E5358E /* ó_uaithi.mp3 */; };
-		9C05850C2CAB1D5300E5358E /* i_ann.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584EC2CAB1D5300E5358E /* i_ann.mp3 */; };
-		9C05850D2CAB1D5300E5358E /* i_ionaibh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584EE2CAB1D5300E5358E /* i_ionaibh.mp3 */; };
-		9C05850E2CAB1D5300E5358E /* idir_eatarthu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584F52CAB1D5300E5358E /* idir_eatarthu.mp3 */; };
-		9C05850F2CAB1D5300E5358E /* i_ionat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584F12CAB1D5300E5358E /* i_ionat.mp3 */; };
-		9C0585102CAB1D5300E5358E /* i_ionam.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584F02CAB1D5300E5358E /* i_ionam.mp3 */; };
-		9C0585112CAB1D5300E5358E /* le_léi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584F72CAB1D5300E5358E /* le_léi.mp3 */; };
-		9C0585122CAB1D5300E5358E /* le_linn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584FB2CAB1D5300E5358E /* le_linn.mp3 */; };
-		9C0585132CAB1D5300E5358E /* ó_uainn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0585002CAB1D5300E5358E /* ó_uainn.mp3 */; };
-		9C0585142CAB1D5300E5358E /* ó_uathu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0585032CAB1D5300E5358E /* ó_uathu.mp3 */; };
-		9C0585152CAB1D5300E5358E /* i_inti.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584ED2CAB1D5300E5358E /* i_inti.mp3 */; };
-		9C0585162CAB1D5300E5358E /* le_leo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584F92CAB1D5300E5358E /* le_leo.mp3 */; };
-		9C0585172CAB1D5300E5358E /* le_liom.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584FC2CAB1D5300E5358E /* le_liom.mp3 */; };
-		9C0585182CAB1D5300E5358E /* idir_eadrainn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584F42CAB1D5300E5358E /* idir_eadrainn.mp3 */; };
-		9C0585192CAB1D5300E5358E /* ó_uaidh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584FE2CAB1D5300E5358E /* ó_uaidh.mp3 */; };
-		9C05851A2CAB1D5300E5358E /* i_iontu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584F22CAB1D5300E5358E /* i_iontu.mp3 */; };
-		9C05851B2CAB1D5300E5358E /* i_ionainn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C0584EF2CAB1D5300E5358E /* i_ionainn.mp3 */; };
 		9C5F8F892CABB04F00021076 /* AudioPracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5F8F882CABB04F00021076 /* AudioPracticeView.swift */; };
 		9C5F8F8B2CABB0C200021076 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5F8F8A2CABB0C200021076 /* DataProvider.swift */; };
 		9C8956652CAAE29E0051EB8B /* IrishPronounQuizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8956642CAAE29E0051EB8B /* IrishPronounQuizApp.swift */; };
@@ -84,76 +18,15 @@
 		9C8956772CAAE3410051EB8B /* RecognitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8956762CAAE3410051EB8B /* RecognitionView.swift */; };
 		9C8956792CAAE3770051EB8B /* ProductionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8956782CAAE3770051EB8B /* ProductionView.swift */; };
 		9C89567B2CAAE66D0051EB8B /* ModeDestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C89567A2CAAE66D0051EB8B /* ModeDestinationView.swift */; };
+		9CF298F42CB06418001103A0 /* BasePronounForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF298F32CB06418001103A0 /* BasePronounForm.swift */; };
+		9CF298F62CB064D4001103A0 /* BasePronounForms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF298F52CB064D4001103A0 /* BasePronounForms.swift */; };
+		9CF298F82CB064F7001103A0 /* PronounFormRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF298F72CB064F7001103A0 /* PronounFormRepository.swift */; };
+		9CF298FA2CB066D0001103A0 /* PronounForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF298F92CB066D0001103A0 /* PronounForm.swift */; };
+		9CF29D272CB06D2A001103A0 /* Audio in Resources */ = {isa = PBXBuildFile; fileRef = 9CF29D262CB06D2A001103A0 /* Audio */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9C0584952CAB06E300E5358E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = IrishPronounQuiz/Info.plist; sourceTree = SOURCE_ROOT; };
-		9C0584982CAB0B6F00E5358E /* faoi_fúm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "faoi_fúm.mp3"; sourceTree = "<group>"; };
-		9C05849A2CAB0E7300E5358E /* faoi_faoi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = faoi_faoi.mp3; sourceTree = "<group>"; };
-		9C05849B2CAB0E7300E5358E /* faoi_fúithi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "faoi_fúithi.mp3"; sourceTree = "<group>"; };
-		9C05849C2CAB0E7300E5358E /* faoi_fút.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "faoi_fút.mp3"; sourceTree = "<group>"; };
-		9C0584A02CAB130D00E5358E /* faoi_fúthu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "faoi_fúthu.mp3"; sourceTree = "<group>"; };
-		9C0584A22CAB14A800E5358E /* faoi_fúinn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "faoi_fúinn.mp3"; sourceTree = "<group>"; };
-		9C0584A42CAB14B100E5358E /* faoi_fúibh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "faoi_fúibh.mp3"; sourceTree = "<group>"; };
-		9C0584A62CAB1D4800E5358E /* ag_acu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ag_acu.mp3; sourceTree = "<group>"; };
-		9C0584A72CAB1D4800E5358E /* ag_agaibh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ag_agaibh.mp3; sourceTree = "<group>"; };
-		9C0584A82CAB1D4800E5358E /* ag_againn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ag_againn.mp3; sourceTree = "<group>"; };
-		9C0584A92CAB1D4800E5358E /* ag_agam.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ag_agam.mp3; sourceTree = "<group>"; };
-		9C0584AA2CAB1D4800E5358E /* ag_agat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ag_agat.mp3; sourceTree = "<group>"; };
-		9C0584AB2CAB1D4800E5358E /* ag_aici.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ag_aici.mp3; sourceTree = "<group>"; };
-		9C0584AC2CAB1D4800E5358E /* ag_aige.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ag_aige.mp3; sourceTree = "<group>"; };
-		9C0584AD2CAB1D4800E5358E /* ar_air.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ar_air.mp3; sourceTree = "<group>"; };
-		9C0584AE2CAB1D4800E5358E /* ar_oraibh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ar_oraibh.mp3; sourceTree = "<group>"; };
-		9C0584AF2CAB1D4800E5358E /* ar_orainn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ar_orainn.mp3; sourceTree = "<group>"; };
-		9C0584B02CAB1D4800E5358E /* ar_orm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ar_orm.mp3; sourceTree = "<group>"; };
-		9C0584B12CAB1D4800E5358E /* ar_ort.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ar_ort.mp3; sourceTree = "<group>"; };
-		9C0584B22CAB1D4800E5358E /* ar_orthu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ar_orthu.mp3; sourceTree = "<group>"; };
-		9C0584B32CAB1D4800E5358E /* ar_uirthi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ar_uirthi.mp3; sourceTree = "<group>"; };
-		9C0584B42CAB1D4800E5358E /* as_aisti.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = as_aisti.mp3; sourceTree = "<group>"; };
-		9C0584B52CAB1D4800E5358E /* as_as.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = as_as.mp3; sourceTree = "<group>"; };
-		9C0584B62CAB1D4800E5358E /* as_asaibh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = as_asaibh.mp3; sourceTree = "<group>"; };
-		9C0584B72CAB1D4800E5358E /* as_asainn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = as_asainn.mp3; sourceTree = "<group>"; };
-		9C0584B82CAB1D4800E5358E /* as_asam.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = as_asam.mp3; sourceTree = "<group>"; };
-		9C0584B92CAB1D4800E5358E /* as_asat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = as_asat.mp3; sourceTree = "<group>"; };
-		9C0584BA2CAB1D4800E5358E /* as_astu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = as_astu.mp3; sourceTree = "<group>"; };
-		9C0584BB2CAB1D4800E5358E /* de_de.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = de_de.mp3; sourceTree = "<group>"; };
-		9C0584BC2CAB1D4800E5358E /* de_di.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = de_di.mp3; sourceTree = "<group>"; };
-		9C0584BD2CAB1D4800E5358E /* de_díbh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "de_díbh.mp3"; sourceTree = "<group>"; };
-		9C0584BE2CAB1D4800E5358E /* de_dínn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "de_dínn.mp3"; sourceTree = "<group>"; };
-		9C0584BF2CAB1D4800E5358E /* de_díobh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "de_díobh.mp3"; sourceTree = "<group>"; };
-		9C0584C02CAB1D4800E5358E /* de_díom.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "de_díom.mp3"; sourceTree = "<group>"; };
-		9C0584C12CAB1D4800E5358E /* de_díot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "de_díot.mp3"; sourceTree = "<group>"; };
-		9C0584C22CAB1D4800E5358E /* do_daoibh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = do_daoibh.mp3; sourceTree = "<group>"; };
-		9C0584C32CAB1D4800E5358E /* do_di.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = do_di.mp3; sourceTree = "<group>"; };
-		9C0584C42CAB1D4800E5358E /* do_dó.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "do_dó.mp3"; sourceTree = "<group>"; };
-		9C0584C52CAB1D4800E5358E /* do_dóibh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "do_dóibh.mp3"; sourceTree = "<group>"; };
-		9C0584C62CAB1D4800E5358E /* do_dom.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = do_dom.mp3; sourceTree = "<group>"; };
-		9C0584C72CAB1D4800E5358E /* do_dúinn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "do_dúinn.mp3"; sourceTree = "<group>"; };
-		9C0584C82CAB1D4800E5358E /* do_duit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = do_duit.mp3; sourceTree = "<group>"; };
-		9C0584EC2CAB1D5300E5358E /* i_ann.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = i_ann.mp3; sourceTree = "<group>"; };
-		9C0584ED2CAB1D5300E5358E /* i_inti.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = i_inti.mp3; sourceTree = "<group>"; };
-		9C0584EE2CAB1D5300E5358E /* i_ionaibh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = i_ionaibh.mp3; sourceTree = "<group>"; };
-		9C0584EF2CAB1D5300E5358E /* i_ionainn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = i_ionainn.mp3; sourceTree = "<group>"; };
-		9C0584F02CAB1D5300E5358E /* i_ionam.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = i_ionam.mp3; sourceTree = "<group>"; };
-		9C0584F12CAB1D5300E5358E /* i_ionat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = i_ionat.mp3; sourceTree = "<group>"; };
-		9C0584F22CAB1D5300E5358E /* i_iontu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = i_iontu.mp3; sourceTree = "<group>"; };
-		9C0584F32CAB1D5300E5358E /* idir_eadraibh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = idir_eadraibh.mp3; sourceTree = "<group>"; };
-		9C0584F42CAB1D5300E5358E /* idir_eadrainn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = idir_eadrainn.mp3; sourceTree = "<group>"; };
-		9C0584F52CAB1D5300E5358E /* idir_eatarthu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = idir_eatarthu.mp3; sourceTree = "<group>"; };
-		9C0584F62CAB1D5300E5358E /* le_leat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = le_leat.mp3; sourceTree = "<group>"; };
-		9C0584F72CAB1D5300E5358E /* le_léi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "le_léi.mp3"; sourceTree = "<group>"; };
-		9C0584F82CAB1D5300E5358E /* le_leis.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = le_leis.mp3; sourceTree = "<group>"; };
-		9C0584F92CAB1D5300E5358E /* le_leo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = le_leo.mp3; sourceTree = "<group>"; };
-		9C0584FA2CAB1D5300E5358E /* le_libh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = le_libh.mp3; sourceTree = "<group>"; };
-		9C0584FB2CAB1D5300E5358E /* le_linn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = le_linn.mp3; sourceTree = "<group>"; };
-		9C0584FC2CAB1D5300E5358E /* le_liom.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = le_liom.mp3; sourceTree = "<group>"; };
-		9C0584FD2CAB1D5300E5358E /* ó_uaibh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ó_uaibh.mp3"; sourceTree = "<group>"; };
-		9C0584FE2CAB1D5300E5358E /* ó_uaidh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ó_uaidh.mp3"; sourceTree = "<group>"; };
-		9C0584FF2CAB1D5300E5358E /* ó_uaim.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ó_uaim.mp3"; sourceTree = "<group>"; };
-		9C0585002CAB1D5300E5358E /* ó_uainn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ó_uainn.mp3"; sourceTree = "<group>"; };
-		9C0585012CAB1D5300E5358E /* ó_uait.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ó_uait.mp3"; sourceTree = "<group>"; };
-		9C0585022CAB1D5300E5358E /* ó_uaithi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ó_uaithi.mp3"; sourceTree = "<group>"; };
-		9C0585032CAB1D5300E5358E /* ó_uathu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ó_uathu.mp3"; sourceTree = "<group>"; };
 		9C5F8F882CABB04F00021076 /* AudioPracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPracticeView.swift; sourceTree = "<group>"; };
 		9C5F8F8A2CABB0C200021076 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		9C8956612CAAE29E0051EB8B /* IrishPronounQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IrishPronounQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,11 +39,222 @@
 		9C8956762CAAE3410051EB8B /* RecognitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecognitionView.swift; sourceTree = "<group>"; };
 		9C8956782CAAE3770051EB8B /* ProductionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductionView.swift; sourceTree = "<group>"; };
 		9C89567A2CAAE66D0051EB8B /* ModeDestinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeDestinationView.swift; sourceTree = "<group>"; };
+		9CF298F32CB06418001103A0 /* BasePronounForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePronounForm.swift; sourceTree = "<group>"; };
+		9CF298F52CB064D4001103A0 /* BasePronounForms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePronounForms.swift; sourceTree = "<group>"; };
+		9CF298F72CB064F7001103A0 /* PronounFormRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PronounFormRepository.swift; sourceTree = "<group>"; };
+		9CF298F92CB066D0001103A0 /* PronounForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PronounForm.swift; sourceTree = "<group>"; };
+		9CF29D262CB06D2A001103A0 /* Audio */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Audio; path = IrishPronounQuiz/Audio; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		9CF29D252CB06D0E001103A0 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Connacht/ag_acu.mp3,
+				Connacht/ag_agaibh.mp3,
+				Connacht/ag_againn.mp3,
+				Connacht/ag_agam.mp3,
+				Connacht/ag_agat.mp3,
+				Connacht/ag_aici.mp3,
+				Connacht/ag_aige.mp3,
+				Connacht/ar_air.mp3,
+				Connacht/ar_oraibh.mp3,
+				Connacht/ar_orainn.mp3,
+				Connacht/ar_orm.mp3,
+				Connacht/ar_ort.mp3,
+				Connacht/ar_orthu.mp3,
+				Connacht/ar_uirthi.mp3,
+				Connacht/as_aisti.mp3,
+				Connacht/as_as.mp3,
+				Connacht/as_asaibh.mp3,
+				Connacht/as_asainn.mp3,
+				Connacht/as_asam.mp3,
+				Connacht/as_asat.mp3,
+				Connacht/as_astu.mp3,
+				Connacht/de_de.mp3,
+				Connacht/de_di.mp3,
+				"Connacht/de_díbh.mp3",
+				"Connacht/de_dínn.mp3",
+				"Connacht/de_díobh.mp3",
+				"Connacht/de_díom.mp3",
+				"Connacht/de_díot.mp3",
+				Connacht/do_daoibh.mp3,
+				Connacht/do_di.mp3,
+				"Connacht/do_dó.mp3",
+				"Connacht/do_dóibh.mp3",
+				Connacht/do_dom.mp3,
+				"Connacht/do_dúinn.mp3",
+				Connacht/do_duit.mp3,
+				Connacht/faoi_faoi.mp3,
+				"Connacht/faoi_fúibh.mp3",
+				"Connacht/faoi_fúinn.mp3",
+				"Connacht/faoi_fúithi.mp3",
+				"Connacht/faoi_fúm.mp3",
+				"Connacht/faoi_fút.mp3",
+				"Connacht/faoi_fúthu.mp3",
+				Connacht/i_ann.mp3,
+				Connacht/i_inti.mp3,
+				Connacht/i_ionaibh.mp3,
+				Connacht/i_ionainn.mp3,
+				Connacht/i_ionam.mp3,
+				Connacht/i_ionat.mp3,
+				Connacht/i_iontu.mp3,
+				Connacht/idir_eadraibh.mp3,
+				Connacht/idir_eadrainn.mp3,
+				Connacht/idir_eatarthu.mp3,
+				Connacht/le_leat.mp3,
+				"Connacht/le_léi.mp3",
+				Connacht/le_leis.mp3,
+				Connacht/le_leo.mp3,
+				Connacht/le_libh.mp3,
+				Connacht/le_linn.mp3,
+				Connacht/le_liom.mp3,
+				"Connacht/ó_uaibh.mp3",
+				"Connacht/ó_uaidh.mp3",
+				"Connacht/ó_uaim.mp3",
+				"Connacht/ó_uainn.mp3",
+				"Connacht/ó_uait.mp3",
+				"Connacht/ó_uaithi.mp3",
+				"Connacht/ó_uathu.mp3",
+				Munster/ag_acu.mp3,
+				Munster/ag_agaibh.mp3,
+				Munster/ag_againn.mp3,
+				Munster/ag_agam.mp3,
+				Munster/ag_agat.mp3,
+				Munster/ag_aici.mp3,
+				Munster/ag_aige.mp3,
+				Munster/ar_air.mp3,
+				Munster/ar_oraibh.mp3,
+				Munster/ar_orainn.mp3,
+				Munster/ar_orm.mp3,
+				Munster/ar_ort.mp3,
+				Munster/ar_orthu.mp3,
+				Munster/ar_uirthi.mp3,
+				Munster/as_aisti.mp3,
+				Munster/as_as.mp3,
+				Munster/as_asaibh.mp3,
+				Munster/as_asainn.mp3,
+				Munster/as_asam.mp3,
+				Munster/as_asat.mp3,
+				Munster/as_astu.mp3,
+				Munster/de_de.mp3,
+				Munster/de_di.mp3,
+				"Munster/de_díbh.mp3",
+				"Munster/de_dínn.mp3",
+				"Munster/de_díobh.mp3",
+				"Munster/de_díom.mp3",
+				"Munster/de_díot.mp3",
+				Munster/do_daoibh.mp3,
+				Munster/do_di.mp3,
+				"Munster/do_dó.mp3",
+				"Munster/do_dóibh.mp3",
+				Munster/do_dom.mp3,
+				"Munster/do_dúinn.mp3",
+				Munster/do_duit.mp3,
+				Munster/faoi_faoi.mp3,
+				"Munster/faoi_fúibh.mp3",
+				"Munster/faoi_fúinn.mp3",
+				"Munster/faoi_fúithi.mp3",
+				"Munster/faoi_fúm.mp3",
+				"Munster/faoi_fút.mp3",
+				"Munster/faoi_fúthu.mp3",
+				Munster/i_ann.mp3,
+				Munster/i_inti.mp3,
+				Munster/i_ionaibh.mp3,
+				Munster/i_ionainn.mp3,
+				Munster/i_ionam.mp3,
+				Munster/i_ionat.mp3,
+				Munster/i_iontu.mp3,
+				Munster/idir_eadraibh.mp3,
+				Munster/idir_eadrainn.mp3,
+				Munster/idir_eatarthu.mp3,
+				Munster/le_leat.mp3,
+				"Munster/le_léi.mp3",
+				Munster/le_leis.mp3,
+				Munster/le_leo.mp3,
+				Munster/le_libh.mp3,
+				Munster/le_linn.mp3,
+				Munster/le_liom.mp3,
+				"Munster/ó_uaibh.mp3",
+				"Munster/ó_uaidh.mp3",
+				"Munster/ó_uaim.mp3",
+				"Munster/ó_uainn.mp3",
+				"Munster/ó_uait.mp3",
+				"Munster/ó_uaithi.mp3",
+				"Munster/ó_uathu.mp3",
+				Ulster/ag_acu.mp3,
+				Ulster/ag_agaibh.mp3,
+				Ulster/ag_againn.mp3,
+				Ulster/ag_agam.mp3,
+				Ulster/ag_agat.mp3,
+				Ulster/ag_aici.mp3,
+				Ulster/ag_aige.mp3,
+				Ulster/ar_air.mp3,
+				Ulster/ar_oraibh.mp3,
+				Ulster/ar_orainn.mp3,
+				Ulster/ar_orm.mp3,
+				Ulster/ar_ort.mp3,
+				Ulster/ar_orthu.mp3,
+				Ulster/ar_uirthi.mp3,
+				Ulster/as_aisti.mp3,
+				Ulster/as_as.mp3,
+				Ulster/as_asaibh.mp3,
+				Ulster/as_asainn.mp3,
+				Ulster/as_asam.mp3,
+				Ulster/as_asat.mp3,
+				Ulster/as_astu.mp3,
+				Ulster/de_de.mp3,
+				Ulster/de_di.mp3,
+				"Ulster/de_díbh.mp3",
+				"Ulster/de_dínn.mp3",
+				"Ulster/de_díobh.mp3",
+				"Ulster/de_díom.mp3",
+				"Ulster/de_díot.mp3",
+				Ulster/do_daoibh.mp3,
+				Ulster/do_di.mp3,
+				"Ulster/do_dó.mp3",
+				"Ulster/do_dóibh.mp3",
+				Ulster/do_dom.mp3,
+				"Ulster/do_dúinn.mp3",
+				Ulster/do_duit.mp3,
+				Ulster/faoi_faoi.mp3,
+				"Ulster/faoi_fúibh.mp3",
+				"Ulster/faoi_fúinn.mp3",
+				"Ulster/faoi_fúithi.mp3",
+				"Ulster/faoi_fúm.mp3",
+				"Ulster/faoi_fút.mp3",
+				"Ulster/faoi_fúthu.mp3",
+				Ulster/i_ann.mp3,
+				Ulster/i_inti.mp3,
+				Ulster/i_ionaibh.mp3,
+				Ulster/i_ionainn.mp3,
+				Ulster/i_ionam.mp3,
+				Ulster/i_ionat.mp3,
+				Ulster/i_iontu.mp3,
+				Ulster/idir_eadraibh.mp3,
+				Ulster/idir_eadrainn.mp3,
+				Ulster/idir_eatarthu.mp3,
+				Ulster/le_leat.mp3,
+				"Ulster/le_léi.mp3",
+				Ulster/le_leis.mp3,
+				Ulster/le_leo.mp3,
+				Ulster/le_libh.mp3,
+				Ulster/le_linn.mp3,
+				Ulster/le_liom.mp3,
+				"Ulster/ó_uaibh.mp3",
+				"Ulster/ó_uaidh.mp3",
+				"Ulster/ó_uaim.mp3",
+				"Ulster/ó_uainn.mp3",
+				"Ulster/ó_uait.mp3",
+				"Ulster/ó_uaithi.mp3",
+				"Ulster/ó_uathu.mp3",
+			);
+			target = 9C8956602CAAE29E0051EB8B /* IrishPronounQuiz */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		9CF2982B2CB060CD001103A0 /* Munster */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Munster; sourceTree = "<group>"; };
-		9CF298B02CB060E9001103A0 /* Ulster */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Ulster; sourceTree = "<group>"; };
+		9CF29BD92CB06C3C001103A0 /* Audio */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (9CF29D252CB06D0E001103A0 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Audio; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,92 +268,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9C0584972CAB0B0500E5358E /* Audio */ = {
-			isa = PBXGroup;
-			children = (
-				9CF298B02CB060E9001103A0 /* Ulster */,
-				9CF2982B2CB060CD001103A0 /* Munster */,
-				9C05851C2CAB1D6700E5358E /* Connacht */,
-			);
-			path = Audio;
-			sourceTree = "<group>";
-		};
-		9C05851C2CAB1D6700E5358E /* Connacht */ = {
-			isa = PBXGroup;
-			children = (
-				9C0584982CAB0B6F00E5358E /* faoi_fúm.mp3 */,
-				9C05849A2CAB0E7300E5358E /* faoi_faoi.mp3 */,
-				9C05849B2CAB0E7300E5358E /* faoi_fúithi.mp3 */,
-				9C05849C2CAB0E7300E5358E /* faoi_fút.mp3 */,
-				9C0584A02CAB130D00E5358E /* faoi_fúthu.mp3 */,
-				9C0584A22CAB14A800E5358E /* faoi_fúinn.mp3 */,
-				9C0584A42CAB14B100E5358E /* faoi_fúibh.mp3 */,
-				9C0584A62CAB1D4800E5358E /* ag_acu.mp3 */,
-				9C0584A72CAB1D4800E5358E /* ag_agaibh.mp3 */,
-				9C0584A82CAB1D4800E5358E /* ag_againn.mp3 */,
-				9C0584A92CAB1D4800E5358E /* ag_agam.mp3 */,
-				9C0584AA2CAB1D4800E5358E /* ag_agat.mp3 */,
-				9C0584AB2CAB1D4800E5358E /* ag_aici.mp3 */,
-				9C0584AC2CAB1D4800E5358E /* ag_aige.mp3 */,
-				9C0584AD2CAB1D4800E5358E /* ar_air.mp3 */,
-				9C0584AE2CAB1D4800E5358E /* ar_oraibh.mp3 */,
-				9C0584AF2CAB1D4800E5358E /* ar_orainn.mp3 */,
-				9C0584B02CAB1D4800E5358E /* ar_orm.mp3 */,
-				9C0584B12CAB1D4800E5358E /* ar_ort.mp3 */,
-				9C0584B22CAB1D4800E5358E /* ar_orthu.mp3 */,
-				9C0584B32CAB1D4800E5358E /* ar_uirthi.mp3 */,
-				9C0584B42CAB1D4800E5358E /* as_aisti.mp3 */,
-				9C0584B52CAB1D4800E5358E /* as_as.mp3 */,
-				9C0584B62CAB1D4800E5358E /* as_asaibh.mp3 */,
-				9C0584B72CAB1D4800E5358E /* as_asainn.mp3 */,
-				9C0584B82CAB1D4800E5358E /* as_asam.mp3 */,
-				9C0584B92CAB1D4800E5358E /* as_asat.mp3 */,
-				9C0584BA2CAB1D4800E5358E /* as_astu.mp3 */,
-				9C0584BB2CAB1D4800E5358E /* de_de.mp3 */,
-				9C0584BC2CAB1D4800E5358E /* de_di.mp3 */,
-				9C0584BD2CAB1D4800E5358E /* de_díbh.mp3 */,
-				9C0584BE2CAB1D4800E5358E /* de_dínn.mp3 */,
-				9C0584BF2CAB1D4800E5358E /* de_díobh.mp3 */,
-				9C0584C02CAB1D4800E5358E /* de_díom.mp3 */,
-				9C0584C12CAB1D4800E5358E /* de_díot.mp3 */,
-				9C0584C22CAB1D4800E5358E /* do_daoibh.mp3 */,
-				9C0584C32CAB1D4800E5358E /* do_di.mp3 */,
-				9C0584C42CAB1D4800E5358E /* do_dó.mp3 */,
-				9C0584C52CAB1D4800E5358E /* do_dóibh.mp3 */,
-				9C0584C62CAB1D4800E5358E /* do_dom.mp3 */,
-				9C0584C72CAB1D4800E5358E /* do_dúinn.mp3 */,
-				9C0584C82CAB1D4800E5358E /* do_duit.mp3 */,
-				9C0584EC2CAB1D5300E5358E /* i_ann.mp3 */,
-				9C0584ED2CAB1D5300E5358E /* i_inti.mp3 */,
-				9C0584EE2CAB1D5300E5358E /* i_ionaibh.mp3 */,
-				9C0584EF2CAB1D5300E5358E /* i_ionainn.mp3 */,
-				9C0584F02CAB1D5300E5358E /* i_ionam.mp3 */,
-				9C0584F12CAB1D5300E5358E /* i_ionat.mp3 */,
-				9C0584F22CAB1D5300E5358E /* i_iontu.mp3 */,
-				9C0584F32CAB1D5300E5358E /* idir_eadraibh.mp3 */,
-				9C0584F42CAB1D5300E5358E /* idir_eadrainn.mp3 */,
-				9C0584F52CAB1D5300E5358E /* idir_eatarthu.mp3 */,
-				9C0584F62CAB1D5300E5358E /* le_leat.mp3 */,
-				9C0584F72CAB1D5300E5358E /* le_léi.mp3 */,
-				9C0584F82CAB1D5300E5358E /* le_leis.mp3 */,
-				9C0584F92CAB1D5300E5358E /* le_leo.mp3 */,
-				9C0584FA2CAB1D5300E5358E /* le_libh.mp3 */,
-				9C0584FB2CAB1D5300E5358E /* le_linn.mp3 */,
-				9C0584FC2CAB1D5300E5358E /* le_liom.mp3 */,
-				9C0584FD2CAB1D5300E5358E /* ó_uaibh.mp3 */,
-				9C0584FE2CAB1D5300E5358E /* ó_uaidh.mp3 */,
-				9C0584FF2CAB1D5300E5358E /* ó_uaim.mp3 */,
-				9C0585002CAB1D5300E5358E /* ó_uainn.mp3 */,
-				9C0585012CAB1D5300E5358E /* ó_uait.mp3 */,
-				9C0585022CAB1D5300E5358E /* ó_uaithi.mp3 */,
-				9C0585032CAB1D5300E5358E /* ó_uathu.mp3 */,
-			);
-			path = Connacht;
-			sourceTree = "<group>";
-		};
 		9C8956582CAAE29E0051EB8B = {
 			isa = PBXGroup;
 			children = (
+				9CF29D262CB06D2A001103A0 /* Audio */,
 				9C8956632CAAE29E0051EB8B /* IrishPronounQuiz */,
 				9C8956622CAAE29E0051EB8B /* Products */,
 			);
@@ -289,7 +291,7 @@
 				9C8956642CAAE29E0051EB8B /* IrishPronounQuizApp.swift */,
 				9C8956662CAAE29E0051EB8B /* ContentView.swift */,
 				9C8956682CAAE2A00051EB8B /* Assets.xcassets */,
-				9C0584972CAB0B0500E5358E /* Audio */,
+				9CF29BD92CB06C3C001103A0 /* Audio */,
 				9C89566A2CAAE2A00051EB8B /* Preview Content */,
 				9C8956722CAAE2DC0051EB8B /* Models.swift */,
 				9C8956742CAAE3200051EB8B /* AudioPlayer.swift */,
@@ -299,6 +301,10 @@
 				9C0584952CAB06E300E5358E /* Info.plist */,
 				9C5F8F882CABB04F00021076 /* AudioPracticeView.swift */,
 				9C5F8F8A2CABB0C200021076 /* DataProvider.swift */,
+				9CF298F32CB06418001103A0 /* BasePronounForm.swift */,
+				9CF298F52CB064D4001103A0 /* BasePronounForms.swift */,
+				9CF298F72CB064F7001103A0 /* PronounFormRepository.swift */,
+				9CF298F92CB066D0001103A0 /* PronounForm.swift */,
 			);
 			path = IrishPronounQuiz;
 			sourceTree = "<group>";
@@ -327,8 +333,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				9CF2982B2CB060CD001103A0 /* Munster */,
-				9CF298B02CB060E9001103A0 /* Ulster */,
+				9CF29BD92CB06C3C001103A0 /* Audio */,
 			);
 			name = IrishPronounQuiz;
 			productName = IrishPronounQuiz;
@@ -373,74 +378,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C0584992CAB0B6F00E5358E /* faoi_fúm.mp3 in Resources */,
+				9CF29D272CB06D2A001103A0 /* Audio in Resources */,
 				9C89566C2CAAE2A00051EB8B /* Preview Assets.xcassets in Resources */,
-				9C0584A52CAB14B100E5358E /* faoi_fúibh.mp3 in Resources */,
 				9C8956692CAAE2A00051EB8B /* Assets.xcassets in Resources */,
-				9C0584A12CAB130D00E5358E /* faoi_fúthu.mp3 in Resources */,
-				9C0584A32CAB14A800E5358E /* faoi_fúinn.mp3 in Resources */,
-				9C05849D2CAB0E7300E5358E /* faoi_fúithi.mp3 in Resources */,
-				9C05849E2CAB0E7300E5358E /* faoi_fút.mp3 in Resources */,
-				9C05849F2CAB0E7300E5358E /* faoi_faoi.mp3 in Resources */,
-				9C0584C92CAB1D4800E5358E /* de_díot.mp3 in Resources */,
-				9C0584CA2CAB1D4800E5358E /* ar_ort.mp3 in Resources */,
-				9C0584CB2CAB1D4800E5358E /* de_díom.mp3 in Resources */,
-				9C0584CC2CAB1D4800E5358E /* do_daoibh.mp3 in Resources */,
-				9C0584CD2CAB1D4800E5358E /* as_aisti.mp3 in Resources */,
-				9C0584CE2CAB1D4800E5358E /* de_díobh.mp3 in Resources */,
-				9C0584CF2CAB1D4800E5358E /* as_asat.mp3 in Resources */,
-				9C0584D02CAB1D4800E5358E /* do_dó.mp3 in Resources */,
-				9C0584D12CAB1D4800E5358E /* ag_againn.mp3 in Resources */,
-				9C0584D22CAB1D4800E5358E /* as_astu.mp3 in Resources */,
-				9C0584D32CAB1D4800E5358E /* de_de.mp3 in Resources */,
-				9C0584D42CAB1D4800E5358E /* do_di.mp3 in Resources */,
-				9C0584D52CAB1D4800E5358E /* ag_agam.mp3 in Resources */,
-				9C0584D62CAB1D4800E5358E /* ar_orm.mp3 in Resources */,
-				9C0584D72CAB1D4800E5358E /* ag_agaibh.mp3 in Resources */,
-				9C0584D82CAB1D4800E5358E /* as_asaibh.mp3 in Resources */,
-				9C0584D92CAB1D4800E5358E /* de_díbh.mp3 in Resources */,
-				9C0584DA2CAB1D4800E5358E /* do_dom.mp3 in Resources */,
-				9C0584DB2CAB1D4800E5358E /* ag_aige.mp3 in Resources */,
-				9C0584DC2CAB1D4800E5358E /* as_asainn.mp3 in Resources */,
-				9C0584DD2CAB1D4800E5358E /* ag_agat.mp3 in Resources */,
-				9C0584DE2CAB1D4800E5358E /* do_dúinn.mp3 in Resources */,
-				9C0584DF2CAB1D4800E5358E /* de_di.mp3 in Resources */,
-				9C0584E02CAB1D4800E5358E /* as_as.mp3 in Resources */,
-				9C0584E12CAB1D4800E5358E /* ag_acu.mp3 in Resources */,
-				9C0584E22CAB1D4800E5358E /* ar_orthu.mp3 in Resources */,
-				9C0584E32CAB1D4800E5358E /* ar_uirthi.mp3 in Resources */,
-				9C0584E42CAB1D4800E5358E /* de_dínn.mp3 in Resources */,
-				9C0584E52CAB1D4800E5358E /* as_asam.mp3 in Resources */,
-				9C0584E62CAB1D4800E5358E /* ag_aici.mp3 in Resources */,
-				9C0584E72CAB1D4800E5358E /* ar_oraibh.mp3 in Resources */,
-				9C0584E82CAB1D4800E5358E /* ar_orainn.mp3 in Resources */,
-				9C0584E92CAB1D4800E5358E /* ar_air.mp3 in Resources */,
-				9C0584EA2CAB1D4800E5358E /* do_dóibh.mp3 in Resources */,
-				9C0585042CAB1D5300E5358E /* le_leis.mp3 in Resources */,
-				9C0585052CAB1D5300E5358E /* ó_uait.mp3 in Resources */,
-				9C0585062CAB1D5300E5358E /* ó_uaibh.mp3 in Resources */,
-				9C0585072CAB1D5300E5358E /* le_leat.mp3 in Resources */,
-				9C0585082CAB1D5300E5358E /* le_libh.mp3 in Resources */,
-				9C0585092CAB1D5300E5358E /* idir_eadraibh.mp3 in Resources */,
-				9C05850A2CAB1D5300E5358E /* ó_uaim.mp3 in Resources */,
-				9C05850B2CAB1D5300E5358E /* ó_uaithi.mp3 in Resources */,
-				9C05850C2CAB1D5300E5358E /* i_ann.mp3 in Resources */,
-				9C05850D2CAB1D5300E5358E /* i_ionaibh.mp3 in Resources */,
-				9C05850E2CAB1D5300E5358E /* idir_eatarthu.mp3 in Resources */,
-				9C05850F2CAB1D5300E5358E /* i_ionat.mp3 in Resources */,
-				9C0585102CAB1D5300E5358E /* i_ionam.mp3 in Resources */,
-				9C0585112CAB1D5300E5358E /* le_léi.mp3 in Resources */,
-				9C0585122CAB1D5300E5358E /* le_linn.mp3 in Resources */,
-				9C0585132CAB1D5300E5358E /* ó_uainn.mp3 in Resources */,
-				9C0585142CAB1D5300E5358E /* ó_uathu.mp3 in Resources */,
-				9C0585152CAB1D5300E5358E /* i_inti.mp3 in Resources */,
-				9C0585162CAB1D5300E5358E /* le_leo.mp3 in Resources */,
-				9C0585172CAB1D5300E5358E /* le_liom.mp3 in Resources */,
-				9C0585182CAB1D5300E5358E /* idir_eadrainn.mp3 in Resources */,
-				9C0585192CAB1D5300E5358E /* ó_uaidh.mp3 in Resources */,
-				9C05851A2CAB1D5300E5358E /* i_iontu.mp3 in Resources */,
-				9C05851B2CAB1D5300E5358E /* i_ionainn.mp3 in Resources */,
-				9C0584EB2CAB1D4800E5358E /* do_duit.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,11 +392,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C8956732CAAE2DC0051EB8B /* Models.swift in Sources */,
+				9CF298FA2CB066D0001103A0 /* PronounForm.swift in Sources */,
 				9C89567B2CAAE66D0051EB8B /* ModeDestinationView.swift in Sources */,
 				9C5F8F892CABB04F00021076 /* AudioPracticeView.swift in Sources */,
+				9CF298F62CB064D4001103A0 /* BasePronounForms.swift in Sources */,
 				9C8956672CAAE29E0051EB8B /* ContentView.swift in Sources */,
 				9C8956652CAAE29E0051EB8B /* IrishPronounQuizApp.swift in Sources */,
 				9C8956772CAAE3410051EB8B /* RecognitionView.swift in Sources */,
+				9CF298F82CB064F7001103A0 /* PronounFormRepository.swift in Sources */,
+				9CF298F42CB06418001103A0 /* BasePronounForm.swift in Sources */,
 				9C5F8F8B2CABB0C200021076 /* DataProvider.swift in Sources */,
 				9C8956792CAAE3770051EB8B /* ProductionView.swift in Sources */,
 				9C8956752CAAE3200051EB8B /* AudioPlayer.swift in Sources */,

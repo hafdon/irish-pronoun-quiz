@@ -25,6 +25,7 @@ struct RecognitionView: View {
 
     var body: some View {
         VStack {
+            
             // 1a. Toggle for showing/hiding spelling
             Toggle(isOn: $showSpelling) {
                 Text("Show Spelling")
@@ -43,19 +44,21 @@ struct RecognitionView: View {
                                 
                                 Spacer()
                                 
-                                if form.meaning == selectedMeaning {
+                                if form.meaning == selectedMeaning && showAnswer {
                                     Image(systemName: "checkmark")
                                         .foregroundColor(.blue)
                                 }
                                 
                                 if showAnswer {
                                     
-                                    if (showSpelling){
-                                        Text("(" + form.form + ")")
+                                    if showSpelling {
+                                        Text("(\(form.form))")
                                     }
                                     
                                     Button(action: {
-                                        audioPlayer.playAudio(named: form.audioFileName.rawValue)
+                                        // Updated method call with subdirectory and resource name
+                                        audioPlayer.playAudio(subdirectory: form.audioSubdirectory, resourceName: form.audioResourceName)
+                                        
                                     }) {
                                         Image(systemName: "speaker.wave.2.fill")
                                             .foregroundColor(.blue)
@@ -93,6 +96,7 @@ struct RecognitionView: View {
                             }
                             .padding(.bottom, 2)
 
+
                         } else {
                             HStack {
                                 Image(systemName: "xmark.circle")
@@ -101,12 +105,11 @@ struct RecognitionView: View {
                                     .foregroundColor(.red)
                             }
                             .padding(.bottom, 2)
+                            
                         }
-
+                        
                         Button("Next") {
-                            withAnimation(.easeInOut(duration: 0.5)) {
-                                loadNextQuestion()
-                            }
+                            loadNextQuestion()
                             showAnswer = false
                             selectedMeaning = ""
                         }
@@ -118,7 +121,8 @@ struct RecognitionView: View {
                     }
                     
                     Button(action: {
-                        audioPlayer.playAudio(named: question.audioFileName.rawValue)
+                        // Updated method call with subdirectory and resource name
+                        audioPlayer.playAudio(subdirectory: question.audioSubdirectory, resourceName: question.audioResourceName)
                     }) {
                         Text("Play Audio")
                             .padding()
@@ -191,7 +195,7 @@ struct RecognitionView: View {
                 shuffledPronounForms.shuffle()
                 
                 // 1d. Play audio automatically
-                audioPlayer.playAudio(named: question.audioFileName.rawValue)
+                audioPlayer.playAudio(subdirectory: question.audioSubdirectory, resourceName: question.audioResourceName)
             }
         }
     }

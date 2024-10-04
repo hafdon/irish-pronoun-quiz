@@ -23,7 +23,7 @@ struct ProductionView: View {
     var body: some View {
         VStack {
             
-            // 1a. Toggle for showing/hiding spelling
+            // 1a. Toggle for showing/hiding meaning
             Toggle(isOn: $showMeaning) {
                 Text("Show Meaning")
             }
@@ -58,7 +58,8 @@ struct ProductionView: View {
                 .padding()
                 
                 Button(action: {
-                    audioPlayer.playAudio(named: question.audioFileName.rawValue)
+                    // Updated method call with subdirectory and resource name
+                    audioPlayer.playAudio(subdirectory: question.audioSubdirectory, resourceName: question.audioResourceName)
                 }) {
                     Text("Play Correct Audio")
                         .padding()
